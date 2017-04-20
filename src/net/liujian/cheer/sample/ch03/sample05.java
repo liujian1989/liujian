@@ -1,4 +1,4 @@
-package net.liujian.cheer.sample.ch01;
+package net.liujian.cheer.sample.ch03;
 
 public class sample05 {
 	static final double PI = 3.14;

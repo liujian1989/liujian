@@ -1,4 +1,4 @@
-package net.liujian.cheer.sample.ch01;
+package net.liujian.cheer.sample.ch03;
 
 public class Arith {
 
@@ -11,5 +11,4 @@ public class Arith {
 		System.out.println("商为:"+(i/j));
 		System.out.println("复合运送为:"+(i+j*i+(2*i-3*j)));
 	}
-
 }

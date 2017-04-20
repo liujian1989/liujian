@@ -1,4 +1,4 @@
-package net.liujian.cheer.sample.ch01;
+package net.liujian.cheer.sample.ch03;
 
 public class Calculation {
 
@@ -11,5 +11,4 @@ public class Calculation {
 		System.out.println(result2);
 
 	}
-
 }

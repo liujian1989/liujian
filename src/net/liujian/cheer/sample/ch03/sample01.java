@@ -1,4 +1,4 @@
-package net.liujian.cheer.sample.ch01;
+package net.liujian.cheer.sample.ch03;
 
 public class sample01 {
 	static String s1 = "ÄãºÃ";
