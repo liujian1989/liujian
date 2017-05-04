@@ -11,11 +11,6 @@ public void method2(){
 	System.out.println(StaticTest1.id);
 	StaticTest1.method1();
 }
-	public static StaticTest1 method3(){
-		method2();
-		return this;
-	}
-
 	}
 
 
