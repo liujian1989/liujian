@@ -8,6 +8,7 @@ public class AccessProperty {
 		  if (i==2){
 			  System.out.println("\n");
 		  }
+		  
 	  }
   }
   public AccessProperty(){  
