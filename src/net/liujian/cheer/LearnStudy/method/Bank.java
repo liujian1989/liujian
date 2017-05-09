@@ -1,4 +1,4 @@
-package net.liujian.cheer.LearnStudy;
+package net.liujian.cheer.LearnStudy.method;
 public class Bank {
 	public static void main(String[] args) {
        java.util.Scanner input = new java.util.Scanner(System.in);

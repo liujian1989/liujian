@@ -1,4 +1,4 @@
-package net.liujian.cheer.LearnStudy;//1、开户2、存钱、3、取款4、查询
+package net.liujian.cheer.LearnStudy.method;//1、开户2、存钱、3、取款4、查询
 
 public class YinHang {
 

@@ -1,4 +1,4 @@
-package net.liujian.cheer.LearnStudy;
+package net.liujian.cheer.LearnStudy.method;
 
 public class Method01 {
 	
