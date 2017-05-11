@@ -37,7 +37,8 @@ public class Method3 {
 	
 	
 	public static void main(String[] args) {
-        char t=8976;
+        int d=65;
+		char t=8976;
 		double u=65;
 		short y=76;
 		byte s=16;
@@ -46,6 +47,7 @@ public class Method3 {
 		method(y);
 		method(u);
 		method(t);
+		method(d);
 		 /*System.out.println(true);
 		 System.out.println('A');
 		 System.out.println("abc");
