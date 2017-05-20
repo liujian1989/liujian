@@ -1,5 +1,14 @@
 eclipse.preferences.version=1
-encoding//src/net/liujian/cheer/demo/ch01/HelloWorld.java=gbk
+encoding//src/net/liujian/cheer/demo/ch01/HelloWorld.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch03/AsciiCode.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch04/BreakTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch04/ContinueTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch04/DoWhileTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch04/ForEach.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch04/SwitchTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch05/ToStringTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch07/JFrameTest.java=UTF-8
+encoding//src/net/liujian/cheer/demo/ch09/DateTest.java=gbk
 encoding//src/net/liujian/cheer/exercise/ch01/Test01.java=gbk
 encoding//src/net/liujian/cheer/exercise/ch01/Test02.java=gbk
 encoding//src/net/liujian/cheer/exercise/ch02/Test1.java=gbk

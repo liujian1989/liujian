@@ -7,6 +7,9 @@ public class Log4jTest {
      System.out.println("Debug Test");
      System.out.println("Warn Test");
      System.out.println("Error Test");
+     
+     
+     
      logger.info("Info Test");
      logger.info("Debug Test");
      logger.info("Warn Test");
