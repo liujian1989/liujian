@@ -4,6 +4,10 @@ public class ObjectTest {
 
 	public static void main(String[] args) {
 		ClassDemo demo=new ClassDemo();
+		System.out.println(demo);
 	}
 
+}
+class ClassDemo{
+	
 }

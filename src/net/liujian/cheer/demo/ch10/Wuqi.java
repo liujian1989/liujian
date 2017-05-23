@@ -1,15 +1,23 @@
 package net.liujian.cheer.demo.ch10;
-public class Ak47 extends Wuqi{
-    public void openFire(){
-    	System.out.println(getClass().getName()+"openFire......");
-    }
-	public static void main(String[] args) {
-		Wuqi _ak47 = new Ak47();
-		Wuqi _tank=new Tank();
 
+import net.liujian.cheer.demo.ch10.AK47;
+import net.liujian.cheer.demo.ch10.Tank;
+import net.liujian.cheer.demo.ch10.Wuqi;
+
+public abstract class Wuqi {
+	
+	public abstract void openFire();
+	
+	public static void main(String[] args){
+		Wuqi _ak47 = new AK47();
+		Wuqi _tank = new Tank();
+		
+		
 		_ak47.openFire();
 		_tank.openFire();
 		
+		
 	}
-
+	
+	
 }

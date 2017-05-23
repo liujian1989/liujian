@@ -1,13 +1,36 @@
 package net.liujian.cheer.demo.ch08;
 
-public  abstract class AbstractJob {
+public abstract class AbstractJob {
 	
-	public abstract  void doSome();
+	public abstract void doSome();
 	
-	public void  doBusiness();
-	
-
+	public void doBusiness(){
+		coneect();
+		
+		doSome();
+		
+		close();
+		
 	}
-
+	
+	private void coneect(){
+		
+	}
+	
+	private void close(){
+		
+	}
+	
+	
+	
 }
-class LoginJob exittends   AbstractJob
+
+class LoginJob extends AbstractJob{
+
+	@Override
+	public void doSome() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

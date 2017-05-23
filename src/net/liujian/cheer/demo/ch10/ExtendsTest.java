@@ -1,8 +1,14 @@
 package net.liujian.cheer.demo.ch10;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import net.liujian.cheer.demo.ch10.Person;
+import net.liujian.cheer.demo.ch10.Teacher;
 public class ExtendsTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
    // Long current = System.currentTimeMillis();
     //System.out.println(current);
@@ -20,7 +26,7 @@ class Person{
 	private String name;
 	private Date birthday;
 	public Person(){
-		//System.out.println(¡°new Person called¡±);
+		//System.out.println(ï¿½ï¿½new Person calledï¿½ï¿½);
 		this.name="pName01";
 		this.birthday=new Date();
 	}
@@ -28,7 +34,7 @@ class Person{
 }
 class Teacher extends Person{
 	public Teacher(){
-		System.out.println(¡°new Teacher called¡±);
+		System.out.println(ï¿½ï¿½new Teacher calledï¿½ï¿½);
 		t.id="t00001";
 		this.id = "320105XXXXXXXX819";
 	}
@@ -41,47 +47,168 @@ class Teacher extends Person{
 		p.setBirthday(df.parse("1990-12-24"));
 		
 		System.out.println(p);
+		Teacher t = new Teacher();
+		t.setId("t00001");
+		t.setName("tName0001");
+		t.setBirthday(df.parse("1985-01-01"));
+		t.setWorkYears(10);
+		System.out.println(t);
+		/***
+		 * this, super
+		 */
 		
+		
+	}
+
+}
+
+
+/*** base
+class Person{
+	public String id;
+	private String name;
+	private Date birthday;
+	
+	public Person(){
+		System.out.println("new Person called");
+		this.name = "pName01";
+		this.birthday = new Date();
+	}
+	
+}
+
+class Teacher extends Person{
+	public Teacher(){
+		System.out.println("new Teacher called");
+		this.id = "320105xxxxxxxx819";
+		
+	}
+}
+
+***/
+
+/** Visit Control property|method
+class Person{
+	private String id;
+	private String name;
+	private Date birthday;
+	
+	public Person(){
+		System.out.println("new Person() called");
+	}
+	
+	public String getId(){
+		return this.id;
+	}
+	
+	public void setId(String id){
+		this.id = id;
+	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public Date getBirthday(){
+		return this.birthday;
+	}
+	
+	public void setBirthday(Date birthday){
+		this.birthday = birthday;
+	}
+	
+	public String toString(){
+		StringBuilder sb = new StringBuilder(1024);
+		sb.append( "Person[id =").append(id).
+			append(",name =").append(name).
+			append(",birthday =").append(birthday);
+		return sb.toString();
+	}
+}
+
+class Teacher extends Person{
+	public Teacher(){
+		System.out.println("new Teacher() called");
+	}
+	
+	public String toString(){
+		StringBuilder sb = new StringBuilder(1024);
+		sb.append( "Teacher[id =").append(getId()).
+			append(",name =").append(getName()).
+			append(",birthday =").append(getBirthday());
+		return sb.toString();	
+	}	
+}
+***/
 		
 class Person{
 	private String id;
 	private String name;
 	private Date birthday;
 	public Person(){
-		
+		System.out.println("new Person() called");
 	}
 	public String getId(){
 	return this.id;	
 	}
-	public void setId(String id);
-	  this.id=id;
+	public void setId(String id){
+		this.id = id;
 	}
-    public String getName(){
+	
+	public String getName(){
+		return this.name;
 	}
-    public void setName(String name);
-    return this.name;
-}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
 	public Date getBirthday(){
 		return this.birthday;
 	}
-	public void setBirthday(Date birthday);
-	 this.birthday = birthday;
-	 public String toString(){
-		 StringBuilder sb = new StringBuilder(1024);
-		 sb.append(super.toString()).
-		 sb.append(getClass().getName()).append
-		 sb.append("Teacher[id= ").append(getId());
-		 append(",name =").append(getName());
-		 append(",birthday =").append(getBirthday());
-		 append("]");
-		 return sb.toString();
-	 }
-}
-}
-//class Teacher extends Person{
-	//public Teacher(){
-		//System.out.println(¡°new Teacher called¡±);
-		//t.id="t00001";
-		//this.id = "320105XXXXXXXX819";
 	
-   //}
+	public void setBirthday(Date birthday){
+		this.birthday = birthday;
+	}
+	/***
+	public String toString(){
+		StringBuilder sb = new StringBuilder(1024);
+		sb.append(getClass().getName()).append("[id =").append(id).
+			append(",name =").append(name).
+			append(",birthday =").append(birthday).
+			append("]");
+		return sb.toString();
+	}
+	***/
+}
+
+class Teacher extends Person{
+	
+	private int workYears;
+	
+	public int getWorkYears(){
+		return this.workYears;
+	}
+	
+	public void setWorkYears(int workYears){
+		this.workYears = workYears;
+	}
+	
+	
+	public Teacher(){
+		System.out.println("new Teacher() called");
+	}
+	
+	/***
+	public String toString(){
+		StringBuilder sb = new StringBuilder(1024);
+		sb.append(super.toString()).
+		append("extention [workYears = ").append(workYears).append("]");
+		return sb.toString();
+	}
+	***/
+}

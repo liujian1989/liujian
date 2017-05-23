@@ -17,6 +17,6 @@ package net.liujian.cheer.sample.ch10;
 			 System.out.println("调用子类的Subroutine构造方法");	 
 		}
       public static void main(String[] args){
-			 Subroutine s=new Subroutine();    //实例化子类对象
+			 new Subroutine();
 	    } 
         }
