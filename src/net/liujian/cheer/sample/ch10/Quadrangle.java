@@ -1,6 +1,6 @@
 package net.liujian.cheer.sample.ch10;
 
-public class Quadrangle {
+/**public class Quadrangle {
 //实例化保存四边形对象的数组对象
 	private Quadrangle[] qtest =new Quadrangle[6];
 	private int nextIndex=0;
@@ -31,3 +31,4 @@ class Parallelogramle extends Quadrangle{
 	public  Parallelogramle (){}
 	System.out.println("平行四边形");
 }
+***/
