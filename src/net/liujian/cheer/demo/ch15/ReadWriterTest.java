@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -21,10 +22,9 @@ public class ReadWriterTest {
 
 }
 
+@SuppressWarnings("serial")
 class TextEditorFrame extends JFrame {
-	private static File editorFile =new File("D:/cheer2017/Test/Editor.txt");
-	
-	
+	private static File editorFile =new File("D:/cheer2017/Editor.txt");	
 	public TextEditorFrame() {
 		setTitle("Text Editor");
 		setSize(300, 300);
@@ -69,8 +69,25 @@ class TextEditorFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				System.out.println("写被点击");
+				FileWriter writer=null;
+				try{
+					writer=new FileWriter(editorFile);
+					String text=content.getText();
+					writer.write(text);
+					writer.flush();
+				}catch(Exception ee){
+					
+				}finally{
+					try{
+						if(writer!=null){
+							writer.close();
+						}
+						
+					}catch(Exception eee){
+						
+					}
+				}
+				//System.out.println("写被点击");
 			}
 			
 		});

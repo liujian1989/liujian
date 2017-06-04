@@ -16,7 +16,7 @@ public class MyImageIcon extends JFrame {
 		//创建一个标签
 		JLabel jl=new JLabel("这是一个JFrame窗体",JLabel.CENTER);
 		//获取图片所在的URL
-		URL url=MyImageIcon.class.getResource("imageButton.jpg");
+		URL url=MyImageIcon.class.getResource("D:/cheer2017/repository/liujian/src/net/liujian/cheer/sample/ch13/imageButton.jpg");
 		Icon icon=new ImageIcon(url);   //实例化Icon对象
 		jl.setIcon(icon);               //为标签设置图片
 		//设置文字放置在标签中间
