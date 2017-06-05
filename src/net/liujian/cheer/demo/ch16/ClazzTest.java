@@ -12,14 +12,14 @@ public class ClazzTest {
 		System.out.println(clazz.getSuperclass().getName());
 		
 		Class<?> personClass =Person.class;
-		Class<?> inferfaces =personClass.getInterface();
+		Class<?>[] inferfaces =personClass.getInterfaces();
 		System.out.println(inferfaces[0].getName());
 		System.out.println(inferfaces[1].getName());
 		
 	}
 
 }
-class Person implements java.io.Serializable, java.lang.cloneable{
+class Person implements java.io.Serializable, Cloneable{
 	/**
 	 * 
 	 */
