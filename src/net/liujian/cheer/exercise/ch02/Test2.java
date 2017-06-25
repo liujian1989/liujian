@@ -1,14 +1,15 @@
 package net.liujian.cheer.exercise.ch02;
 
+
 public class Test2 {
-    public static String name = "Ğ¡Íõ"; 
+    public static String name = "Ğ¡ï¿½ï¿½"; 
     public static int age ;
     static { age = 23; 
-    System.out.println("³õÊ¼»¯age");
+    System.out.println("ï¿½ï¿½Ê¼ï¿½ï¿½age");
     }
     public static String address ;
     static {
-    	address = "ËÕÖİ";
+    	address = "ï¿½ï¿½ï¿½ï¿½";
     	age =36;
     }
 	public static void main(String[] args) {

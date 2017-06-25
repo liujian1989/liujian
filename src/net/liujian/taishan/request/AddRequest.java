@@ -9,7 +9,6 @@ import net.liujian.taishan.define.Request;
 import net.liujian.taishan.entity.Student;
 
 
-
 public class AddRequest implements Request {
 	
 	private Student fill;

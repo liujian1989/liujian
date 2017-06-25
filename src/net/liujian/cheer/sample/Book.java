@@ -1,5 +1,4 @@
 package net.liujian.cheer.sample;
-
 public class Book {
 private String name;
 public String getName(){

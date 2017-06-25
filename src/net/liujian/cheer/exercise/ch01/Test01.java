@@ -1,10 +1,9 @@
 package net.liujian.cheer.exercise.ch01;
-
 public class Test01 {
 
 	public static void main(String[] args) {
-		System.out.println("<<JavaÈëÃÅµ½¾«Í¨>>");
-		System.out.println("ÊÇÎÒÑ§Ï°JavaÓïÑÔµÄ×î¼ÑÊé¼®"); 
+		System.out.println("<<Javaï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½Í¨>>");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Ñ§Ï°Javaï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½é¼®"); 
 	}
 
 }

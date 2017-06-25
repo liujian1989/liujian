@@ -1,7 +1,6 @@
 package net.liujian.cheer.sample.ch15;
 
 import java.io.File;
-
 public class FileTest {               //创建类
 	public static void main(String[] args) { //主方法
 		File file=new File("word.txt");      //创建文件对象
